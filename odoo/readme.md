@@ -38,14 +38,28 @@ LINK : fatal error LNK1158: не удается запустить "rc.exe
 ```
 Похоже, надо ставить Windows Kits:
 https://developer.microsoft.com/ru-ru/windows/downloads/windows-10-sdk  
+Да, это помогло, rc.exe появился.  
+Скопировал файлы rc.exe и rcdll.dll из каталога  
+```
+c:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x64\
+```
+в каталог  
+```
+c:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\
+```
+После этого компиляция пакетов прошла неуспешно:(  
+
+надо читать  
+Ветка на форуме  
+http://odoo-russia.ru/forum/topic/590/  
+
 
 
 Здесь еще одна инструкция по установке билд тулс  
 http://qaru.site/questions/202909/microsoft-visual-c-140-is-required-unable-to-find-vcvarsallbat  
 Поиск по фразе "Убедитесь, что вы установили эти требуемые пакеты. Отлично сработало в моем случае, так как я установил проверенные пакеты", там картинка с набором компонент. (хотя я делал не по ней)  
 
-Ветка на форуме  
-http://odoo-russia.ru/forum/topic/590/  
+
 
 ### Бинарники для питона
 
